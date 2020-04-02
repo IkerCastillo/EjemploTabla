@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicios con arrays</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+	var valores = [true, 5, false, "hola", "adios", 2];
+
+	document.write("<b>" + "Manejo de valores de un array" + "<br>" + "<br>" + "</b>");
+
+	document.write("Valores del array:" + "<br>");	
+	document.write("<b>" + valores + "<br>" + "<br>" + "</b>");
+ 
+	// Cual de los 2 elementos de texto es mayor
+	// Si el resultado es true, el primer texto es mayor
+	document.write("Cuál de los dos elementos de texto es mayor" + "<br>");
+ 		if(valores[3] > valores[4]){
+				document.write("<b>" + "Hola es mayor que Adios: " + valores[3] + "<br>" + "<br>" + "</b>");
+		}else if(valores[3] < valores[4]){
+				document.write("<b>" + "Adios es menor que Hola: " + valores[3] + "<br>" + "<br>" + "</b>");
+	}
+
+
+	// Combinar valores booleanos
+	var valor1 = valores[0];
+	var valor2 = valores[2];
+
+	// Obtener un resultado TRUE
+	var resultado = valor1 || valor2;
+	document.write("Obtener resultado true con booleanos" + "<br>");
+	document.write("<b>" + "Resultado: " + resultado + "<br>" + "</b>");
+
+	// Obtener un resultado FALSE
+	resultado = valor1 && valor2;
+	document.write("Obtener resultado false con booleanos" + "<br>");
+	document.write("<b>" + "Resultado: " + resultado + "<br>" + "<br>" + "</b>");
+
+
+	// Operaciones matemáticas
+	var num1 = valores[1];
+	var num2 = valores[5];
+
+	document.write("Operaciones con los valores de array" + "<br>");
+	var suma = num1 + num2;
+	document.write("<b>" + "El valor de la suma es: " + suma + "<br>");
+
+	var resta = num1 - num2;
+	document.write("El valor de la resta es: " + resta + "<br>");
+
+	var multiplicacion = num1 * num2;
+	document.write("El valor de la multiplicación es: " + multiplicacion + "<br>");
+
+	var division = num1 / num2;
+	document.write("El valor de la división es: " + division + "<br>");
+
+	var modulo = num1 % num2;
+	document.write("El valor del módulo es: " + modulo + "</b>");
+
+	</script>
+</head>
+<body>
+</body>
+</html>
